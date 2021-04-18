@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
 :root {
     --second-color: #30242A;
@@ -16,7 +16,13 @@ body{
 
 nav {
     font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-bottom: black 2px solid;
+}
+
+img.logo {
+    margin: -20px 70px;
 }
 
 a.nav-link {
@@ -26,10 +32,11 @@ a.nav-link {
 .btn.login {
     background-color: var(--second-color);
     color: white;
+    font-weight: 700;
     border-radius: 15px ;
     width: 100px;
     height: 50px;
-    margin: 10px 30px;
+    margin: 10px 30px 0px;
 }
 
 .btn.login:hover {
