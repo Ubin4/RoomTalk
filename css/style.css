@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    --second-color: #30242A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+}
+
+nav {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+a.nav-link {
+    margin: 20px 30px;
+}
+
+.btn.login {
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 15px ;
+    width: 100px;
+    height: 50px;
+    margin: 10px 30px;
+}
+
+.btn.login:hover {
+    background-color: white;
+    border-color: var(--second-color);
+}
+
+.btn:focus {
+    outline: 0;
+}
