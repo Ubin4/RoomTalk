@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
 
 :root {
+    --Nunito-font: 'Nunito', sans-serif;
+    --Archivo-font: 'Archivo', sans-serif;
+    --Jost-font: 'Jost', sans-serif;
     --second-color: #30242A;
+    --third-color : #C88116;
+
 }
 
 *{
@@ -15,7 +22,7 @@ body{
 }
 
 nav {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--Nunito-font);
     font-weight: 800;
     font-size: 1.1rem;
     border-bottom: black 2px solid;
@@ -29,21 +36,188 @@ a.nav-link {
     margin: 20px 30px;
 }
 
-.btn.login {
+.btn.login{
     background-color: var(--second-color);
     color: white;
     font-weight: 700;
     border-radius: 15px ;
     width: 100px;
     height: 50px;
-    margin: 10px 30px 0px;
+    margin: 15px 70px 0px 30px;
 }
 
-.btn.login:hover {
+.btn.register {
+    background-color: var(--second-color);
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 15px ;
+    width: 150px;
+    height: 60px;
+    letter-spacing: 0.5px;
+    /* margin: 15px 70px 0px 30px; */
+}
+
+.btn.login:hover, .btn.register:hover {
     background-color: white;
     border-color: var(--second-color);
 }
 
-.btn:focus {
-    outline: 0;
+/* button:focus {
+    outline: none;
+} */
+
+
+/* WELCOME-SECTION */
+/* #welcome {
+    height: 100vh;
+} */
+
+/* .container.first {
+    padding: 10px;
+} */
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
+}
+
+.welcome-text h6 {
+    color: var(--third-color);
+    font-family: var(--Archivo-font);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.welcome-text h1 {
+    font-family: var(--Jost-font);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.welcome-text h1::before{
+    content: '';
+    display: block;
+    width: 183px;
+    height: 30px;
+    margin-top: 30px;
+    position: absolute;
+    background-color: var(--third-color);
+    opacity: 30%;
+}
+
+.welcome-text p {
+    font-family: var(--Archivo-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.welcome-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 30px;
+}
+
+/* END OF WELCOME SECTION */
+
+/* AFTER WELCOME SECTION */
+
+/* .container.second {
+    padding: 20px;
+} */
+
+#after-welcome {
+    /* height: 80vh; */
+    background-color: var(--second-color);
+    /* position: relative; */
+}
+
+.afterWelcome-img {
+    width: 700px;
+    height: 520px;
+    left: -50px;
+    position: relative;
+}
+
+.afterWelcome-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
+    text-align: right;
+}
+
+.afterWelcome-text h1 {
+    font-family: var(--Jost-font);
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 72px;
+    margin-bottom: 50px;
+}
+
+.afterWelcome-text p {
+    font-family: var(--Archivo-font);
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 40px;
+}
+
+
+/* JOURNEY SECTION */
+
+.journey-title{
+    text-align: center;
+    margin: 60px 0px 30px;
+    font-family: var(--Jost-font);
+    font-weight: 600;
+    font-size: 3.5rem;
+    position: relative;
+}
+
+/* .journey-title::before {
+    content: '';
+    display: flex;
+    width: 340px;
+    height: 30px;
+    margin-top: 30px;
+    left: 35%;
+    right: 70%;
+    position: absolute;
+    background-color: var(--third-color);
+    opacity: 30%;
+} */
+
+.journey-col {
+    padding: 5% 15%;
+}
+
+.journey-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.journey-col h2{
+    font-family: var(--Archivo-font);
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 50%;
+    text-align: center;
+}
+
+.journey-col h3 {
+    font-family: var(--Archivo-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 60px;
 }
