@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+.container-fluid {
+    padding: 0% 15% ;
+}
+
 body{
     color: black;
 }
@@ -98,7 +102,7 @@ a.nav-link:hover {
 
 /* WELCOME-SECTION */
 #welcome {
-    padding: 1% 0;
+    padding: 1% 0%;
 }
 
 /* .container.first {
@@ -147,11 +151,11 @@ a.nav-link:hover {
 }
 
 .welcome-img {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     max-width: 100%;
     max-height: 100%;
-    margin-left: 30px;
+    right: 20%;
 }
 
 /* END OF WELCOME SECTION */
@@ -163,16 +167,14 @@ a.nav-link:hover {
 } */
 
 #after-welcome {
-    padding: 2% 0;
+    padding: 3% 0;
     /* height: 80vh; */
     background-color: var(--second-color);
     /* position: relative; */
 }
 
 .afterWelcome-img {
-    width: 700px;
-    height: 520px;
-    left: -50px;
+    width: 100%;
     position: relative;
 }
 
@@ -188,7 +190,7 @@ a.nav-link:hover {
 .afterWelcome-text h1 {
     font-family: var(--Jost-font);
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 72px;
     margin-bottom: 50px;
 }
@@ -196,7 +198,7 @@ a.nav-link:hover {
 .afterWelcome-text p {
     font-family: var(--Archivo-font);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     line-height: 40px;
 }
 
@@ -205,7 +207,7 @@ a.nav-link:hover {
 
 #journey {
     text-align: center;
-    padding: 5% 0;
+    padding: 7% 0;
 }
 
 .title {
@@ -223,7 +225,7 @@ a.nav-link:hover {
     content: '';
     display: block;
     left: 50%;
-    width: 340px;
+    width: 32%;
     height: 30px;
     margin-top: 35px;
     position: absolute;
@@ -237,8 +239,9 @@ a.nav-link:hover {
 }
 
 .journey-img {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 90%;
 }
 
 .journey-col h2{
@@ -263,7 +266,7 @@ a.nav-link:hover {
 #review {
     background-color: var(--second-color);
     text-align: center;
-    padding: 4% 0;
+    padding: 4% 0%;
 }
 
 #review h1 {
@@ -384,3 +387,4 @@ a.nav-link:hover {
     background-color: white;
     color: black;
 }
+
