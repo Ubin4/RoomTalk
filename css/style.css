@@ -28,12 +28,40 @@ nav {
     border-bottom: black 2px solid;
 }
 
+footer {
+    background-color: var(--second-color);
+    padding: 5% 5%;
+    color: white;
+    overflow-x: hidden;
+}
+
+form {
+    padding: 7% 10%;
+    background-color: #231A1F;
+    font-family: var(--Jost-font);
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+    box-shadow:none !important;
+    border: 0 !important;
+    border-bottom: 1px solid white !important;
+    background-color: #231A1F !important;
+}
+
+/*-------------------------*/
+
 img.logo {
     margin: -20px 70px;
 }
 
 a.nav-link {
     margin: 20px 30px;
+}
+
+a.nav-link:hover {
+    opacity: 60%;
 }
 
 .btn.login{
@@ -69,9 +97,9 @@ a.nav-link {
 
 
 /* WELCOME-SECTION */
-/* #welcome {
-    height: 100vh;
-} */
+#welcome {
+    padding: 1% 0;
+}
 
 /* .container.first {
     padding: 10px;
@@ -135,6 +163,7 @@ a.nav-link {
 } */
 
 #after-welcome {
+    padding: 2% 0;
     /* height: 80vh; */
     background-color: var(--second-color);
     /* position: relative; */
@@ -174,27 +203,34 @@ a.nav-link {
 
 /* JOURNEY SECTION */
 
-.journey-title{
+#journey {
     text-align: center;
-    margin: 60px 0px 30px;
-    font-family: var(--Jost-font);
-    font-weight: 600;
-    font-size: 3.5rem;
+    padding: 5% 0;
+}
+
+.title {
+    width: 100%;
     position: relative;
 }
 
-/* .journey-title::before {
+.journey-title{
+    font-family: var(--Jost-font);
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.journey-title::before {
     content: '';
-    display: flex;
+    display: block;
+    left: 50%;
     width: 340px;
     height: 30px;
-    margin-top: 30px;
-    left: 35%;
-    right: 70%;
+    margin-top: 35px;
     position: absolute;
+    transform: translate(-50%, 10%);
     background-color: var(--third-color);
     opacity: 30%;
-} */
+}
 
 .journey-col {
     padding: 5% 15%;
@@ -220,4 +256,131 @@ a.nav-link {
     line-height: 40px;
     text-align: center;
     padding: 0px 60px;
+}
+
+/* REVIEW SECTION */
+
+#review {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 4% 0;
+}
+
+#review h1 {
+    color: white;
+    font-family: var(--Jost-font);
+    /* font-size: 2.5rem; */
+    /* padding-top: 50px; */
+    margin-bottom: 20px;
+}
+
+.review-img {
+    width: 20%;
+    margin: 40px;
+}
+
+#review p, #review h3 {
+    color: white;
+    padding: 0% 15%;
+    font-family: var(--Archivo-font);
+    font-style: normal;
+}
+
+#review h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.carousel-item {
+    padding: 0% 20%;
+}
+
+/* QUOTES SECTION */
+
+#quotes {
+    padding: 7% 15%;
+}
+
+.quotes-content h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 40px;
+}
+
+.quotes-content h3:nth-child(2) {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+.fb-ic, .ins-ic,.yt-ic,.tw-ic {
+    color: white;
+}
+
+.footer_col1 h6 {
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.footer_col1 hr {
+    border: 1.5px solid white;
+}
+
+.footer_col1 p{
+    font-size: 0.8rem;
+    opacity: 70%;
+}
+
+.footer_col1 .row {
+    margin-top: 80px;
+}
+
+.footer_col1 i {
+    font-size: 30px;
+}
+
+.footer_col2 h6 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer_col2 li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer_col2 li a {
+    color: white;
+    font-size: 0.8rem;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+.footer_col2 li a:hover {
+    opacity: 100%;
+}
+
+
+.footer_col2 p {
+    font-size: 0.8rem;
+    opacity: 70%;
+}
+
+.form-control {
+    color: white !important;
+}
+
+.btn.submit {
+    background-color: #382a31;
+    outline: none;
+    border: 0 !important;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.btn.submit:hover {
+    background-color: white;
+    color: black;
 }
