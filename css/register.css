@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
+
+
+:root {
+    --Nunito-font: 'Nunito', sans-serif;
+    --Archivo-font: 'Archivo', sans-serif;
+    --Jost-font: 'Jost', sans-serif;
+    --main-color: #30242A;
+    --second-color : #C88116;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+form {
+    text-align: justify;
+    font-family: var(--Archivo-font);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+input {
+    outline: none;
+    box-shadow:none !important;
+    border: 0 !important;
+    border-bottom: 1px solid white !important;
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+
+.btn.submit {
+    font-family: var(--Nunito-font);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    background-color: #fff;
+    outline: none;
+    border: 0 !important;
+    border-radius: 15px;
+    padding: 10px 8%;
+}
+
+.btn.submit:hover {
+    background-color: #382a31;
+    color: #fff;
+}
+
+.register-img {
+    max-width: 150%;
+
+}
+
+.container {
+    font-family: var(--Archivo-font);
+}
+
+.right-content {
+    width: 80%;
+    margin-left: 20%;
+    padding: 5% 12%;
+    text-align: center;
+    background-color: var(--main-color) ;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.right-content p {
+    font-family: var(--Jost-font);
+}
+
+.right-content a {
+    color: #fff;
+}
+
+.icon-fb-google i {
+    margin-right: 10px;
+}
+
+.facebook, .google {
+    margin: 10px 15%;
+    padding: 5px 0;
+    background-color: #fff;
+    color: black;
+    border-radius: 50px;
+    font-family: var(--Nunito-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+

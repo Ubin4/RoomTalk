@@ -6,9 +6,8 @@
     --Nunito-font: 'Nunito', sans-serif;
     --Archivo-font: 'Archivo', sans-serif;
     --Jost-font: 'Jost', sans-serif;
-    --second-color: #30242A;
-    --third-color : #C88116;
-
+    --main-color: #30242A;
+    --second-color : #C88116;
 }
 
 *{
@@ -17,23 +16,16 @@
     box-sizing: border-box;
 }
 
-.container-fluid {
-    padding: 0% 15% ;
-}
-
 body{
     color: black;
 }
 
 nav {
-    font-family: var(--Nunito-font);
-    font-weight: 800;
-    font-size: 1.1rem;
     border-bottom: black 2px solid;
 }
 
 footer {
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     padding: 5% 5%;
     color: white;
     overflow-x: hidden;
@@ -56,50 +48,6 @@ input {
 
 /*-------------------------*/
 
-img.logo {
-    margin: -20px 70px;
-}
-
-a.nav-link {
-    margin: 20px 30px;
-}
-
-a.nav-link:hover {
-    opacity: 60%;
-}
-
-.btn.login{
-    background-color: var(--second-color);
-    color: white;
-    font-weight: 700;
-    border-radius: 15px ;
-    width: 100px;
-    height: 50px;
-    margin: 15px 70px 0px 30px;
-}
-
-.btn.register {
-    background-color: var(--second-color);
-    color: white;
-    font-weight: 500;
-    font-size: 1.2rem;
-    border-radius: 15px ;
-    width: 150px;
-    height: 60px;
-    letter-spacing: 0.5px;
-    /* margin: 15px 70px 0px 30px; */
-}
-
-.btn.login:hover, .btn.register:hover {
-    background-color: white;
-    border-color: var(--second-color);
-}
-
-/* button:focus {
-    outline: none;
-} */
-
-
 /* WELCOME-SECTION */
 #welcome {
     padding: 1% 0%;
@@ -117,7 +65,7 @@ a.nav-link:hover {
 }
 
 .welcome-text h6 {
-    color: var(--third-color);
+    color: var(--second-color);
     font-family: var(--Archivo-font);
     font-size: 1.3rem;
     font-weight: 500;
@@ -139,7 +87,7 @@ a.nav-link:hover {
     height: 30px;
     margin-top: 30px;
     position: absolute;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     opacity: 30%;
 }
 
@@ -169,7 +117,7 @@ a.nav-link:hover {
 #after-welcome {
     padding: 3% 0;
     /* height: 80vh; */
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     /* position: relative; */
 }
 
@@ -230,7 +178,7 @@ a.nav-link:hover {
     margin-top: 35px;
     position: absolute;
     transform: translate(-50%, 10%);
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     opacity: 30%;
 }
 
@@ -264,7 +212,7 @@ a.nav-link:hover {
 /* REVIEW SECTION */
 
 #review {
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     text-align: center;
     padding: 4% 0%;
 }
@@ -379,7 +327,7 @@ a.nav-link:hover {
     background-color: #382a31;
     outline: none;
     border: 0 !important;
-    padding: 10px 30px;
+    padding: 10px 30%;
     border-radius: 15px;
 }
 
